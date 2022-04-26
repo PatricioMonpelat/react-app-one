@@ -13,7 +13,7 @@ function NewMeetupPage() {
         headers: { "Content-type": "applicatiuon/json" },
       }
     ).then(() => {
-      navigate.replace('/');
+      navigate('/');
     });
   }
   return (
