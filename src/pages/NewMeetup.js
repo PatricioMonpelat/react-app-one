@@ -1,10 +1,22 @@
-import NewMeetupForm from "../components/layout/meetups/NewMeetupForm";
+import NewMeetupForm from '../components/layout/meetups/NewMeetupForm';
 
 function NewMeetupPage() {
-  return <section> 
+  function addMeetupHandler(meetupData) {
+    fetch(
+      'https://react-app-one-4c22c-default-rtdb.firebaseio.com/meetups.json',
+      {
+        method: 'POST',
+        body: JSON.stringify(meetupData),
+        headers: { 'Content-type': 'applicatiuon/json' },
+      }
+    );
+  }
+  return (
+    <section>
       <h1>Add New Meetup</h1>
-    <NewMeetupForm/>
-  </section>;
+      <NewMeetupForm onAddMeetup={addMeetupHandler} />
+    </section>
+  );
 }
 
 export default NewMeetupPage;
