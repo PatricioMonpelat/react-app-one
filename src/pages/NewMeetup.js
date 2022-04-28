@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import NewMeetupForm from "../components/layout/meetups/NewMeetupForm";
+import NewMeetupForm from "../components/meetups/NewMeetupForm";
 
 function NewMeetupPage() {
   const navigate = useNavigate();
