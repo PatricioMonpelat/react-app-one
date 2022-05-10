@@ -12,6 +12,7 @@
     font-size: 2rem;
     color: white;
     font-weight: bold;
+    cursor: pointer;
   }
   
   .header ul {
@@ -44,4 +45,20 @@
     border-radius: 12px;
     padding: 0 1rem;
     margin-left: 0.5rem;
+  }
+
+  .header button {
+    color: #fcb8d2;
+    font: inherit;
+    background-color: transparent;
+    border: 3px solid #fcb8d2;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .header button:hover {
+   
+    background-color: #a39910;
+    color: #000000;
   }
