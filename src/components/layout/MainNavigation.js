@@ -24,7 +24,7 @@ function MainNavigation() {
   return (
     <header className={classes.header}>
       <div className={classes.logo} onClick={goHomeHandler}>
-        Home{" "}
+        Home
       </div>
       <nav>
         <ul>
